@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "717098386652",
+    "firebase_url": "https://oma-v1-3-default-rtdb.firebaseio.com",
+    "project_id": "oma-v1-3",
+    "storage_bucket": "oma-v1-3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717098386652:android:ac1e112bed36aab8866019",
+        "android_client_info": {
+          "package_name": "com.example.oma_v13"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717098386652-h833jarl2nm684gv4jt9aiuntnh8tiqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMhNp-tMAEb0f2nWhqMU2J_V2te17Weqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717098386652-h833jarl2nm684gv4jt9aiuntnh8tiqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
