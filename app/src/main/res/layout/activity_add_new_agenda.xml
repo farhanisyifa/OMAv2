@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddNewAgenda">
+    tools:context=".AddNewEvent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Agenda"
+            android:textSize="30sp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/agendaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Agenda"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/agendaFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="From Event"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/agendaDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add Descrption"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/agendaDate"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Date"/>
+
+            <ImageButton
+                android:id="@+id/calAgenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/event"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addAgendaBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

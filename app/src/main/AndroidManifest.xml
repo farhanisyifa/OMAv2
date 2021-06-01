@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OMA_v13">
-        <activity android:name=".AddNewTask"></activity>
+        <activity android:name=".AddNewAgenda"></activity>
+        <activity android:name=".SubmitPresence" />
+        <activity android:name=".AddNewTask" />
         <activity android:name=".AddNewEvent" />
         <activity android:name=".ResetPassword" />
         <activity android:name=".Profile" />
         <activity android:name=".Evaluation" />
-        <activity android:name=".Presence" />
+        <activity android:name=".PresenceActivity" />
         <activity android:name=".TaskActivity" />
         <activity android:name=".Event" />
         <activity android:name=".Register" />

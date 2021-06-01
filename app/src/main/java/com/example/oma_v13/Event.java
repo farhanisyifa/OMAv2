@@ -21,7 +21,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 
 public class Event extends AppCompatActivity {
-    FloatingActionButton addEventBtn;
+    FloatingActionButton addEventBtn, addPresence;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     FirestoreRecyclerAdapter<Events, EventsViewHolder> eventAdapter;
@@ -40,6 +40,15 @@ public class Event extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), AddNewEvent.class));
+                finish();
+            }
+        });
+
+        addPresence = findViewById(R.id.addPresenceBtn);
+        addPresence.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),SubmitPresence.class));
                 finish();
             }
         });
